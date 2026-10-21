@@ -36,20 +36,3 @@ for i in range(len(x)):
     print("%d\t %.4f\t\t %.6f" % (i, x[i], cost(x[i])))
 
 
-# Đường cong hàm số
-x_values = np.linspace(1, 5.5, 200)
-y_values = cost(x_values)
-
-plt.plot(x_values, y_values)
-
-# Các điểm Gradient Descent
-y = [cost(i) for i in x]
-
-plt.scatter(x, y)
-
-plt.xlabel("x")
-plt.ylabel("f(x)")
-plt.title("Gradient Descent")
-
-plt.grid()
-plt.show()
